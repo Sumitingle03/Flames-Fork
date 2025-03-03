@@ -1,7 +1,7 @@
 export const categories = [
   {
     name: "Pizza",
-    image: "/images/pizza.jpg",
+    image: "../../images/pizza.jpg",
   },
   {
     name: "Biryani",
