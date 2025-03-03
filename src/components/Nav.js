@@ -1,4 +1,6 @@
 import React,{useState} from 'react';
+import LoginPage from '../pages/login';
+
 
 function Nav() {
   const [showSearch, setShowSearch] = useState(false);
@@ -47,13 +49,6 @@ function Nav() {
           onClick={() => setShowSearch(!showSearch)}
         >
           {showSearch ? "Close" : "Search"}
-        </button>
-        <button
-          className="btn btn-outline-primary ms-3"
-          type="button"
-          onClick={() => window.location.href = "/pages/login.js"}
-        >
-          Login
         </button>
       </div>
 

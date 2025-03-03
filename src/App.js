@@ -6,6 +6,9 @@ import "./App.css";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
 import LoginPage from "./pages/login";
+import RegistrationPage from "./pages/register";
+
+/*import RegistrationPage from "./pages/register";*/
 
 function App() {
   return (
@@ -13,7 +16,17 @@ function App() {
     <div>
       
       <Nav/>
-      <HomePage />
+      
+
+      <Router>  {/* ✅ Ensure this wraps everything */}
+      <Routes>
+
+        <Route path="/" element={<HomePage />} />
+        <Route path="/login" element={<LoginPage />} />
+        <Route path="/register" element={<RegistrationPage/>} />
+      </Routes>
+    </Router>
+
       <Footer />
     </div>
   );
